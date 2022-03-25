@@ -13,6 +13,17 @@ header{
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+header *{
+    color: #fff;
+}
+
+header > div{
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 header #logo{
@@ -22,13 +33,12 @@ header #logo{
 }
 
 header #logo img{
-    height: 100%;
+    height: 90%;
 }
 
 h1{
     font-size: 2em;
     font-family: cursive;
-    color: #fff;
 }
 
 section{
@@ -40,7 +50,7 @@ section{
 }
 
 .header-section h2{
-    font-size: 2.2em;
+    font-size: 2rem;
     margin-bottom: 12px;
 }
 
@@ -99,4 +109,83 @@ section{
     margin-bottom: 10px;
 }
 
+footer{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
 
+footer > .header-footer{
+    height: 90px;
+    padding: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > .header-footer > img{
+    height:80%;
+    margin-right: 20px;
+}
+footer > .header-footer > h2{
+    color: #fff;
+    font-size: 1.2rem;
+}
+footer * {
+    color: #ccc;
+}
+
+footer > #about-website > p{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer > #about-website a{
+    font-style: italic;
+    text-decoration: dotted;
+}
+
+.nav-main > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-main li {
+    margin: 0 20px 0 10px;
+}
+
+
+footer a, .nav-main a{
+    color: #F2C53D;
+}
+
+footer a:hover, .nav-main a:hover{
+    color: #BF861B;
+}
+
+.nav-main a{
+    padding: 5px;
+    margin-left: 10px;
+}
+
+
+@media(max-width: 712px){
+    header{
+        flex-direction: column;
+        justify-content: left;
+        align-items: stretch;
+    }
+
+    header > div{
+        height: 70%;
+    }
+
+    h1{
+        font-size: 1.7em;
+    }
+}
