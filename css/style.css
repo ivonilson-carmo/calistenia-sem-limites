@@ -8,27 +8,6 @@
     text-align: center;
 }
 
-@font-face {
-    font-family: 'Merriweather';
-    src: url(../assets/fontes/Merriweather/Merriweather-Regular.ttf);
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Merriweather';
-    src: url(../assets/fontes/Merriweather/Merriweather-Bold.ttf);
-    font-weight: bold;
-}
-
-
-@font-face {
-    font-family: 'Merriweather';
-    src: url(../assets/fontes/Merriweather/Merriweather-BoldItalic.ttf);
-    font-weight: bold;
-    font-style: italic;
-}
-
-
 body{
     min-height: 100vh;
 }
@@ -346,5 +325,9 @@ section.main-about p{
 
     main > section.main-about{
         width: 90%;
+    }
+
+    #main-contact .header-img h2{
+        font-size: 1rem;
     }
 }
