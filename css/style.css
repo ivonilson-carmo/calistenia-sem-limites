@@ -34,9 +34,9 @@ body{
 }
 
 header{
-    height: 85px;
     background-color: #333;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -48,18 +48,20 @@ header *{
 
 header > div{
     display: flex;
-    height: 100%;
+    height: 85px;
     align-items: center;
 }
 
 header #logo{
-    width: 80px;
-    height: 100%;
-    margin: 0 1rem;
+    max-width: 25%;
+    height: 95%;
+    margin: 0 .5rem;
+    display: flex;
+    align-items: center;
 }
 
 header #logo img{
-    height: 90%;
+    height: 100%;
 }
 
 h1{
@@ -163,7 +165,7 @@ footer > .header-footer > img{
     margin-right: 1rem;
 }
 footer > .header-footer > h2{
-    font-size: 2em;
+    font-size: 100%;
     color: #fff;
 }
 
@@ -231,14 +233,24 @@ section.main-about p{
 
 #main-contact .header-img{
     display: flex;
-    height: 90px;
+    height: 100px;
     align-items: center;
     margin-bottom: .8rem;
+    justify-content: space-between;
 }
 
-#main-contact .header-img img{
-    height: 100%;
+#main-contact .header-img h2{
+    width: calc(100% - 80px);
+}
+
+#main-contact .header-img .img{
     margin-right: 1rem;
+    background: url(../assets/img/my-photo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 #main-contact #infos-contact{
@@ -263,6 +275,7 @@ section.main-about p{
 #infos-contact h2{
     font-size: 1.2rem;
     text-align: left;
+    margin-top: 0.5rem;
 }
 
 #infos-contact nav{
@@ -283,35 +296,55 @@ section.main-about p{
 }
 
 #infos-contact nav a img{
-    height: 100%;
+    height: 80%;
+    margin-right: 0.5rem;
 }
 
 
 @media(max-width: 712px){
-    header{
-        height: 100px;
-    }
-
     header .header{
         align-items: center;
     }
 
     header > div{
-        height: 100%;
+        height: 70px;
         margin-bottom: .5rem;
     }
 
+    header #logo img{
+        height: 100%;
+    }
+
     header > .nav-main{
-        margin-left: 2rem;
+        width: 100%;
     }
     
     header .nav-main ul{
         display: flex;
+        width: 100%;
+        list-style: none;
         align-items: flex-start;
-        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .nav-main ul  li{
+        margin: 0;
+        text-decoration: none;
+        font-size: 1.1rem;
+        text-decoration: underline;
+        animation: all .3s;
+    }
+
+    header .nav-main ul  li:hover{
+        text-decoration: none;
     }
 
     h1{
-        font-size: 1.7em;
+        font-size: 1.2rem;
+        width: 72%;
+    }
+
+    main > section.main-about{
+        width: 90%;
     }
 }
