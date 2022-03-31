@@ -45,7 +45,6 @@ header #logo img{
 
 h1{
     font-size: 2rem;
-    font-family: cursive;
 }
 
 section{
@@ -131,7 +130,6 @@ footer{
 
 footer > .header-footer{
     height: 90px;
-    padding: 1rem;
     max-width: 80%;
     margin: 0 auto;
     display: flex;
@@ -174,6 +172,10 @@ footer a, .nav-main a{
 
 footer a:hover, .nav-main a:hover{
     color: #BF861B;
+}
+
+#developer{
+    padding: 0.5rem;
 }
 
 .nav-main a{
@@ -281,12 +283,16 @@ section.main-about p{
 
 
 @media(max-width: 712px){
+    header{
+        justify-content: center;
+    }
+
     header .header{
         align-items: center;
     }
 
     header > div{
-        height: 70px;
+        height: 65px;
         margin-bottom: .5rem;
     }
 
@@ -296,6 +302,7 @@ section.main-about p{
 
     header > .nav-main{
         width: 100%;
+        margin-bottom: 0.5rem;
     }
     
     header .nav-main ul{
@@ -329,5 +336,9 @@ section.main-about p{
 
     #main-contact .header-img h2{
         font-size: 1rem;
+    }
+    
+    #main-contact section{
+        width: 90%;
     }
 }
